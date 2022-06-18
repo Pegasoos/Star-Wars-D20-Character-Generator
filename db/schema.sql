@@ -12,7 +12,7 @@ email VARCHAR(50) NOT NULL
 CREATE TABLE IF NOT EXISTS d20_character(
  id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
  creator_id INTEGER NOT NULL,
- FOREIGN KEY (creator_id) REFERENCES user (idd20_character),
+ FOREIGN KEY (creator_id) REFERENCES user (id),
  char_name VARCHAR(30) NOT NULL,
  char_level INT DEFAULT 1 NOT NULL,
  strength TINYINT NOT NULL,
