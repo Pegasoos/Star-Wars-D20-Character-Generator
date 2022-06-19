@@ -14,4 +14,18 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.put('/:id', async (req, res) => {
+    try{
+        const characterToUpdate = await D20_Character.findOne({where:{id:req.params.id}});
+        const updatedCharacter = await characterToUpdate.update({
+        ...req.body,
+        creator_id:req.session.user_id
+    })
+        res.status(200).json(updatedCharacter);
+}
+    catch (err){
+        res.status(400).json(err);
+    }
+});
+
 module.exports = router;
