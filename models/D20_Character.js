@@ -25,7 +25,7 @@ D20_Character.init(
             type: DataTypes.STRING,
             allowNull:false,
         },
-        level: {
+        char_level: {
             type: DataTypes.INTEGER,
             allowNull: false,
             defaultValue: 1

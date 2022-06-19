@@ -8,5 +8,9 @@
     "mysql2": "^2.3.3",
     "path": "^0.12.7",
     "sequelize": "^6.21.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
   }
 }
