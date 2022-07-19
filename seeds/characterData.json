@@ -1,0 +1,13 @@
+[
+    {
+        "creator_id": 1,
+        "char_name": "Obi Wan Kenobi",
+        "strength":16,
+        "dexterity":16,
+        "constitution":15,
+        "intelligence":16,
+        "wisdom":17,
+        "charisma":18,
+        "char_level":10
+    }
+]
