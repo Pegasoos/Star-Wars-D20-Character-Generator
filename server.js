@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const sequelize = require('./config/connection')
+const sequelize = require('./config/connection');
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const dotenv = require('dotenv').config();
@@ -9,7 +9,7 @@ const dotenv = require('dotenv').config();
 const exhbs = require('express-handlebars');
 const hbs = exhbs.create();
 app.engine('handlebars', hbs.engine);
-app.set('view-engine', 'handlebars');
+app.set('view engine', 'handlebars');
 
 const PORT = process.env.PORT || 7777;
 
